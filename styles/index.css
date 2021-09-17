@@ -1,5 +1,5 @@
 body {
-    width: 1440px;
+    /* width: 1440px; */
     background-color: #E5E5E5;
     color: #FEFFFF;
     font-family: 'Roboto', sans-serif;
@@ -11,13 +11,18 @@ body {
 
 /* Is this okay - to put all this in 'body'? */
 
-main {
+/* main {
     display: flexbox;
-}
+} */
 
 .container {
-    width: 1440px;
-    background-color: #73D1DE;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; - This makes the whole form go "up",
+                                so far that only the bottom half
+                                is showing??? */
+    
+
 }
 
 .form-container {
