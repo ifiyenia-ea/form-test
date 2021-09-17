@@ -1,0 +1,129 @@
+body {
+    width: 1440px;
+    background-color: #E5E5E5;
+    color: #FEFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Is this okay - to put all this in 'body'? */
+
+main {
+    display: flexbox;
+}
+
+.container {
+    width: 1440px;
+    background-color: #73D1DE;
+}
+
+.form-container {
+    position: absolute;
+    width: 1440ox;
+    display: inline-flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+form {
+    box-sizing: border-box;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: #BE0909;
+    width: 609px;
+    height: 594px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3em;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+    background-color: #BE0909;
+    color: #FEFFFF;
+    width: 400px;
+}
+
+.input-2 {
+    width: 213px;
+}
+
+.input, .label {
+    margin: 30px;
+}
+
+.input::placeholder {
+    color:#FEFFFF;
+}
+
+
+/*
+::placeholder {
+    letter-spacing: 0.3em;
+    
+    Okay - this was working, then I (must have)
+    accidentally deleted it when I wanted to move it,
+    wrote it the same way as before, and now it's
+    not working? 😂 WHY???
+} */
+
+.rectangle {
+    /* display: flexbox; */
+    background-color: #FFB039;
+    width: 345px;
+    height: 594px;
+    position: absolute;
+    transform: translate(609px);
+}
+
+
+button {
+    background-color: #468189;
+    border-radius: 40px;
+    width: 202px;
+    height: 48px;
+    box-shadow: #468189; /* fix */
+    margin-top: 20px;
+    position: absolute;
+    transform: translate(160px);
+}
+
+button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 00.1em;
+}
+
+/* button:hover {
+    transform: scale(1.02);
+} 
+
+    So this was, of course, working
+    perfectly before I moved the button
+    using transform: translate.
+    I thought positioning things like this
+    was the better option (rather than
+    just using margins etc) but maybe it
+    is not? I tried, though...
+
+*/
+
+button:hover {
+    transform: translate(160px) scale(1.05);
+
+    /* Although this works - not sure if
+        it's an accepted way of doing this? */
+}
+
+img {
+    transform: translate(-270px);
+}
